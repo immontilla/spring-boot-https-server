@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Chuck</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel='stylesheet' href='/webjars/bootstrap/css/bootstrap.min.css' />
+	<link rel='stylesheet' href='/css/site.css' />
+</head>
+<body>
+    <!--<p th:text="${fact}" />-->
+    <figure class="figure">
+		<img src="img/chuck.jpg" class="figure-img img-fluid rounded" alt="Chuck"/>
+		<figcaption class="figure-caption text-right" th:text="${fact}"></figcaption>
+	</figure>
+</body>
+</html>

@@ -1,0 +1,9 @@
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:server.jks
+    key-password: s3cr3t
+    trust-store: classpath:server.jks
+    trust-password: s3cr3t
+    client-auth: need
+
