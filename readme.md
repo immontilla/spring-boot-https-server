@@ -1,4 +1,4 @@
-In my opinion, it is time to apply the "HTTPS for Everything Policy" to development environments too. This template is my way to  show my humble support to that.
+In my opinion, it is time to apply the "HTTPS for Everything" policy to development environments too. This template is my way to  show my humble support to that.
 
 In few words, this template is a multimodule Spring Boot project comprised of a https server and a http client (it could be transformed in a https client easily, though). The https server expose a REST operation whereas the client shows its output in a html file. Nowadays, this is a pretty common scenario.
 
