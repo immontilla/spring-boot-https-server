@@ -10,7 +10,11 @@ import com.google.gson.JsonParser;
 
 @Controller
 public class ChuckController {
-    
+    @RequestMapping("/")
+    public String index(Model model) {
+        return home(model);
+    }
+
     @RequestMapping("/chuck")
     public String home(Model model) {
         RestTemplate restTemplate = new RestTemplate();
