@@ -1,5 +1,5 @@
 buildscript {
-    ext { springBootVersion = '1.5.7.RELEASE' }
+    ext { springBootVersion = '2.0.0.RELEASE' }
     repositories { mavenCentral() }
     dependencies { classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") }
 }
@@ -7,6 +7,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
 
 jar {
     baseName = 'client'
@@ -21,8 +22,8 @@ repositories {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-thymeleaf')
-    compile('org.webjars:webjars-locator:0.32-1')
-    compile('org.webjars:bootstrap:4.0.0-beta')
-    compile('com.google.code.gson:gson:2.8.1')
+    compile('org.webjars:webjars-locator-core')
+    compile('org.webjars:bootstrap:4.0.0-2')
+    compile('com.google.code.gson:gson:2.8.2')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
